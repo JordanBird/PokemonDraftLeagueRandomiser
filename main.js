@@ -59,7 +59,7 @@ function getPokemon(seed) {
 }
 
 function initEvents() {
-    $('#seed').on('change', function () {
+    $('#seed').on('keyup keypress blur change', function () {
         drawTiers($(this).val());
 
         initDynamicEvents();
